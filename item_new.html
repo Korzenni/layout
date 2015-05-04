@@ -6,12 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Candy Rent | Localization edit</title>
+    <title>Candy Rent | Add new item</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="css/plugins/chosen/chosen.css" rel="stylesheet">
     <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -44,15 +45,15 @@
                 <li>
                     <a href="#"><i class="fa fa-pencil-square-o"></i> <span class="nav-label">Reservations</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a href="reservation_new.html">Add new reservation</a></li>
+                        <li class="active"><a href="reservation_new.html">Add new reservation</a></li>
                         <li><a href="reservation_index.html">All reservations</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="active">
                     <a href="#"><i class="fa fa-pencil-square-o"></i> <span class="nav-label">Items</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li><a href="item_new.html">Add new item</a></li>
-                        <li class="active"><a href="item_index.html">All items</a></li>
+                        <li class="active"><a href="item_new.html">Add new item</a></li>
+                        <li><a href="item_index.html">All items</a></li>
                     </ul>
                 </li>
                 <li>
@@ -81,11 +82,11 @@
                 <li>
                     <a href="#"><i class="fa fa-bar-chart"></i> <span class="nav-label">Stats</span></a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="#"><i class="fa fa-gears"></i> <span class="nav-label">Settings</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li ><a href="settings_documents.html">Documents templates</a></li>
-                        <li class="active"><a href="settings_company.html">Company data</a></li>
+                        <li><a href="settings_documents.html">Documents templates</a></li>
+                        <li><a href="settings_company.html">Company data</a></li>
                         <li><a href="settings_about_me.html">About me page</a></li>
                         <li ><a href="settings_office_hours.html">Office hours</a></li>
                     </ul>
@@ -152,76 +153,121 @@
 
         </nav>
         </div>
-            <div class="row wrapper border-bottom white-bg page-heading">
-                <div class="col-lg-10">
-                    <h2>Company Data</h2>
-                    <ol class="breadcrumb">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a>Settings</a>
-                        </li>
-                        <li class="active">
-                            <strong>Company Data - localization edit</strong>
-                        </li>
-                    </ol>
-                </div>
-                <div class="col-lg-2">
-
-                </div>
+        <div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-10">
+                <h2>Items</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a>Items</a>
+                    </li>
+                    <li class="active">
+                        <strong>Add new item</strong>
+                    </li>
+                </ol>
             </div>
-        <div class="wrapper wrapper-content animated fadeInRight">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="ibox float-e-margins">
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="wrapper wrapper-content animated fadeInUp">
+                    <div class="ibox">
                         <div class="ibox-title">
-                            <h5>Localization</h5>
+                            <h5>Add new item</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                            </div>
                         </div>
                         <div class="ibox-content">
-                            <div class="ibox-content">
-                                <div class="form-horizontal">
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Google Maps Address</label>
-                                        <div class="col-lg-10">
-                                            <div class="input-group m-b">
-                                                <span class="input-group-addon"><i class="fa fa-exclamation"></i></span>
-                                                <input type="text" value="Hower-Strasse 74, Oberswald" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Google Map</label>
-                                        <div class="col-lg-10">
-                                            <div class="google-map" id="map1"></div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Region</label>
-                                        <div class="col-lg-10">
-                                            <div class="form-group">
-                                                <select data-placeholder="Choose a region..." class="chosen-select" style="width:100%">
-                                                    <option value="Oberswaldee">Oberswaldee</option>
-                                                    <option value="United States">United States</option>
-                                                    <option value="United Kingdom">United Kingdom</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="hr-line-dashed"></div>
-                                    <div class="form-group">
-                                        <div class="col-sm-4 col-sm-offset-2">
-                                            <button class="btn btn-white" type="submit">Cancel</button>
-                                            <button class="btn btn-primary" type="submit">Save changes</button>
-                                        </div>
+                            <form method="get" class="form-horizontal">
+                                <div class="form-group"><label class="col-sm-2 control-label">Item name</label>
+                                    <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Category</label>
+                                    <div class="col-sm-10"><select class="form-control m-b" name="account">
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                        <option>option 4</option>
+                                    </select></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Item description</label>
+
+                                    <div class="col-sm-10"><textarea name="text" class="form-control" style="resize:vertical" rows=10></textarea></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+
+
+                                <div class="form-group"><label class="col-sm-2 control-label">Price per day</label>
+                                    <div class="col-sm-4">
+                                        <div class="input-group m-b"><span class="input-group-addon">$</span> <input type="text" class="form-control"> </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="hr-line-dashed"></div>
+
+                                <div class="form-group"><label class="col-sm-7 control-label">Prerequisities for rent</label>
+                                </div>
+
+                                <div class="form-group"><label class="col-sm-2 control-label">Minimal age</label>
+                                    <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                </div>
+
+                                <div class="form-group"><label class="col-sm-2 control-label">Minimal number of rented items</label>
+                                    <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                </div>
+
+                                <div class="form-group"><label class="col-sm-2 control-label">Maximum percentage of canceled rents</label>
+                                    <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                </div>
+
+                                <div class="form-group"><label class="col-sm-2 control-label">Additionals terms of rent</label>
+                                    <div class="col-sm-10"><textarea name="text" class="form-control" style="resize:vertical" rows=10></textarea></div>
+                                </div>
+
+                                 <div class="form-group"><label class="col-sm-7 control-label"> Advance payment</label>
+                                </div>
+
+                                <div class="form-group"><label class="col-sm-2 control-label"> <br/></label>
+                                 <div class="col-sm-10">
+                                    <div class="checkbox"><label> <input type="checkbox" value="">  Advance payment for clients who do not meet
+                                    at least one prerequisite </label></div>
+
+                                    <div class="checkbox"><label> <input type="checkbox" value="">  Advance payment is always required </label></div>
+                                 </div>
+                                 </div>
+
+                                 <div class="form-group"><label class="col-sm-2 control-label"> Advance payment value</label>
+                                    <div class="col-sm-4">
+                                        <div class="input-group m-b"><span class="input-group-addon">$</span> <input type="text" class="form-control"> </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            
+                                
+
+                                
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <div class="col-sm-4 col-sm-offset-2">
+                                        <button class="btn btn-white" type="submit">Cancel</button>
+                                        <button class="btn btn-primary" type="submit">Save changes</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
         <div class="footer">
             <div>
                 <strong>Copyright</strong> CandyRent &copy; 2015
@@ -242,8 +288,11 @@
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
 
-     <!-- Chosen -->
+    <!-- Chosen -->
     <script src="js/plugins/chosen/chosen.jquery.js"></script>
+
+    <!-- Data picker -->
+    <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
 
     <!-- iCheck -->
     <script src="js/plugins/iCheck/icheck.min.js"></script>
@@ -255,6 +304,12 @@
             });
 
             $('.chosen-select').chosen();
+
+            $('#data_5 .input-daterange').datepicker({
+                keyboardNavigation: false,
+                forceParse: false,
+                autoclose: true
+            });
         });
     </script>
 </body>

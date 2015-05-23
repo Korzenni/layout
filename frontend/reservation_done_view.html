@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Candy Rent | Rent your holiday items</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="top-navigation">
+
+    <div id="wrapper">
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom white-bg">
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <div class="navbar-header">
+                        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                            <i class="fa fa-reorder"></i>
+                        </button>
+                        <a href="index.html" class="navbar-brand">CandyRent</a>
+                    </div>
+                    <div class="navbar-collapse collapse" id="navbar">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="dashboard.html">
+                                    Dashboard
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">
+                                    Help
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sign-up.html">
+                                    Sign up
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Account <span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li class="active"><a href="user_settings.html">Settings</a></li>
+                                    <li><a href="#">Sign out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="wrapper wrapper-content">
+                <div class="container">
+                    <div class="alert alert-info">
+                        You can set an opinion for that order. <a class="alert-link" href"#opinion">Set it now</a>.
+                    </div>
+                    <div class="row animated fadeInRight">
+                      <div class="col-md-12">
+
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Atomic Ski Pro Set Reservation</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Rental Company</label>
+                                    <div class="col-lg-10">
+                                        <p class="form-control-static"><a href="company_view.html">Ski Oberswald Inc.</a></p>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Item</label>
+                                    <div class="col-lg-10">
+                                        <p class="form-control-static"><a href="ski_page.html">Atom Ski X120</a></p>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+
+                                <div class="form-group" id="data_5">
+                                    <label class="col-lg-2 control-label">Dates</label>
+                                    <div class="col-lg-10">
+                                        <p class="form-control-static">From <strong> 6th May 2015</strong> to <strong>12th May 2015</strong> (8 days) </p>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Total payment</label>
+                                    <div class="col-lg-10">
+                                        <p class="form-control-static"><span class="label label-warning">Not payed</span> 228 PLN</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Down payment</label>
+                                    <div class="col-lg-10">
+                                        <p class="form-control-static"><span class="label label-primary">Payed</span> 22 PLN</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Deposit</label>
+                                    <div class="col-lg-10">
+                                        <p class="form-control-static"><span class="label label-success">In store</span> 150 PLN</p>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group" id="opinion">
+                                    <label class="col-lg-2 control-label">Set opinion</label>
+                                    <div class="col-lg-10">
+                                         <input placeholder="Enter your opinion about this order" class="form-control">
+                                         <button class="btn btn-sm btn-primary m-t-n-xs" type="submit"><strong>Save opinion</strong></button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+
+                    <div class="row animated fadeInRight">
+                      <div class="col-md-12">
+
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Messages in this reservation</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div id="vertical-timeline" class="vertical-container dark-timeline center-orientation">
+                                <div class="vertical-timeline-block">
+                                    <div class="vertical-timeline-icon blue-bg">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+
+                                    <div class="vertical-timeline-content">
+                                        <h2>Re: Re: What is this ski set for?</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                        <p><small>Read on Dec 24</small></p>
+                                        <a href="messages_reply.html" class="btn btn-sm btn-primary"> Reply</a>
+                                        <span class="vertical-date">
+                                            Today <br/>
+                                            <small>Dec 24</small>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="vertical-timeline-block">
+                                    <div class="vertical-timeline-icon">
+                                        <img alt="image" class="img-circle" src="../img/profile_small.jpg" />
+                                    </div>
+
+                                    <div class="vertical-timeline-content">
+                                        <h2>Re: What is this ski set for?</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                        <span class="vertical-date">
+                                            Yesterday <br/>
+                                            <small>Dec 24</small>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="vertical-timeline-block">
+                                    <div class="vertical-timeline-icon blue-bg">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+
+                                    <div class="vertical-timeline-content">
+                                        <h2>What is this ski set for?</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                        <p><small>Read on Dec 23</small></p>
+                                        <span class="vertical-date">
+                                            2 days ago<br/>
+                                            <small>Dec 23</small>
+                                        </span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row animated fadeInRight">
+                      <div class="col-md-12">
+
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Documents uploaded by Ski Obserwald Inc.</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+
+                                        <th>#</th>
+                                        <th>Title</th>
+                                        <th>Body</th>
+                                        <th>Uploaded on</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Recipe</td>
+                                        <td>Lorem ipsum dolor sit amet...</td>
+                                        <td>Feb 14, 2013</td>
+                                        <td>
+                                            <i class="fa fa-print"></i>&nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Rental agreement</td>
+                                        <td>Lorem ipsum dolor sit amet...</td>
+                                        <td>Feb 14, 2013</td>
+                                        <td>
+                                            <i class="fa fa-print"></i>&nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Deposit check</td>
+                                        <td>Lorem ipsum dolor sit amet...</td>
+                                        <td>Feb 14, 2013</td>
+                                        <td>
+                                            <i class="fa fa-print"></i>&nbsp;
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="pull-right">
+                <a href="../index.html">Become business partner</a>
+            </div>
+            <div>
+                <strong>Copyright</strong> CandyRent &copy; 2015
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+
+
+    <!-- Mainly scripts -->
+    <script src="../js/jquery-2.1.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="../js/inspinia.js"></script>
+    <script src="../js/plugins/pace/pace.min.js"></script>
+
+    <!-- Flot -->
+    <script src="../js/plugins/flot/jquery.flot.js"></script>
+    <script src="../js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="../js/plugins/flot/jquery.flot.resize.js"></script>
+
+    <!-- ChartJS-->
+    <script src="../js/plugins/chartJs/Chart.min.js"></script>
+
+    <!-- Peity -->
+    <script src="../js/plugins/peity/jquery.peity.min.js"></script>
+    <!-- Peity demo -->
+    <script src="../js/demo/peity-demo.js"></script>
+</body>
+
+</html>
